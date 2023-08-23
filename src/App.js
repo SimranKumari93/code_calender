@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import {BrowseRouter, Route , Routes} from 'react-router-dom';
 import './App.css';
-
+import DataDisplay from './components/DataDisplay.js';
+import Home from './components/Home.js';
+//  import Navbar from './components/Navbar.js';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    {/* {<DataDisplay myURL = "https://kontests.net/api"/>} */}
+  
+      <BrowseRouter>
+         <Routes>
+        <Route path='code_chef' element={<Home />} />      
+        <Route path='/CodeChef' element={<DataDisplay name="Code Chef" myURl = "https://kontests.net/api/v1/code_chef"/>} />      
+        <Route path='CodeForces' element={<DataDisplay name="Code Forces" myURl = "https://kontests.net/api/v1/codeforces"/>} />      
+        <Route path='LeetCode' element={<DataDisplay name="Leet Code" myURl = "https://kontests.net/api/v1/leet_code"/>} />      
+        <Route path='TopCoder' element={<DataDisplay name="Top Coder" myURl = "https://kontests.net/api/v1/top_coder"/>} />      
+        </Routes>
+      </BrowseRouter>
+
+   </div>
+    
   );
 }
 
