@@ -1,26 +1,27 @@
-import {BrowseRouter, Route , Routes} from 'react-router-dom';
+import { BrowserRouter , Route , Routes } from 'react-router-dom';
 import './App.css';
-import DataDisplay from './components/DataDisplay.js';
+import DataContest from './components/DataContest.js';
 import Home from './components/Home.js';
 //  import Navbar from './components/Navbar.js';
 function App() {
   return (
    <div>
-    {/* {<DataDisplay myURL = "https://kontests.net/api"/>} */}
+    {/* {<DataContest myURL = "https://kontests.net/api"/>} */}
   
-      <BrowseRouter>
+      <BrowserRouter>
          <Routes>
-        <Route path='code_chef' element={<Home />} />      
-        <Route path='/CodeChef' element={<DataDisplay name="Code Chef" myURl = "https://kontests.net/api/v1/code_chef"/>} />      
-        <Route path='CodeForces' element={<DataDisplay name="Code Forces" myURl = "https://kontests.net/api/v1/codeforces"/>} />      
-        <Route path='LeetCode' element={<DataDisplay name="Leet Code" myURl = "https://kontests.net/api/v1/leet_code"/>} />      
-        <Route path='TopCoder' element={<DataDisplay name="Top Coder" myURl = "https://kontests.net/api/v1/top_coder"/>} />      
+        <Route path='/' element={<Home />} />      
+        <Route path='/codechef' element={<DataContest name="Code Chef" myURL = "https://kontests.net/api/v1/code_chef"/>} />      
+        <Route path='/codeforces' element={<DataContest name="Code Forces" myURL = "https://kontests.net/api/v1/codeforces"/>} />      
+        <Route path='/leetcode' element={<DataContest name="Leet Code" myURL = "https://kontests.net/api/v1/leet_code"/>} />      
+        <Route path='/topcoder' element={<DataContest name="Top Coder" myURL = "https://kontests.net/api/v1/top_coder"/>} />      
         </Routes>
-      </BrowseRouter>
+      </BrowserRouter>
 
    </div>
     
   );
 }
 
-export default App;
+ export default App;
+
