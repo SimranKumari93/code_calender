@@ -42,7 +42,7 @@ const Home = () => {
          </div>
          
     </div>
-      /*<h1 align="center">Code Calender</h1>
+  {/*<h1 align="center">Code Calender</h1>
     <div className="container">
      <div><img src="D:\Web Development\code_calender\public\code cal images\leetcode2.png" alt=""/>LeetCode</div><br/>
      <div><img src="D:\Web Development\code_calender\public\code cal images\code-forces.png" alt=""/>Codeforces</div><br/>
@@ -52,7 +52,7 @@ const Home = () => {
      <div><img src="D:\Web Development\code_calender\public\code cal images\topcoder.png" alt=""/>TopCoder</div><br/>
      <div><img src="D:\Web Development\code_calender\public\code cal images\hackerrank.png" alt=""/>HackerRank</div><br/>
      <div><img src="D:\Web Development\code_calender\public\code cal images\hackerearth.223x256.png" alt=""/>Hackerearth</div><br/>
-     </div>*/
+     </div>*/}
      
 </>
   )
