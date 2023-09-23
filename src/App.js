@@ -6,7 +6,7 @@ import Home from './components/Home.js';
 function App() {
   return (
    <div>
-    {/* {<DataContest myURL = "https://kontests.net/api"/>} */}
+    
   
       <BrowserRouter>
          <Routes>
