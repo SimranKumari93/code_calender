@@ -109,10 +109,10 @@
    }
     .Sec{
         display: block;
-        
+        width: 100%;
     }
     .subSec{
-        width: 95%;
+        width: 100%;
         height: none;
     }
     .wrap{

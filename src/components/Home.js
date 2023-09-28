@@ -10,8 +10,8 @@ import './Homes.css';
 const Home = () => {
 
   const contestList1 = ['LeetCode', 'CodeChef', 'CodeForces'];
-  const contestList2 = ['HackerRank', 'W3Schools', 'GeeksForGeeks'];
-  const contestList3 = ['TopCoder', 'CodingNinjas', 'HackerEarth'];
+  const contestList2 = ['HackerRank', 'AtCoder'];
+  const contestList3 = ['TopCoder', 'HackerEarth'];
 
   return (  
     <>
@@ -36,7 +36,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                <Link to={contestList1[(Math.floor(Math.random() * contestList1.length))]} className='contestLink'> 
+                <Link to='all' className='contestLink'> 
                   <div className='up '><button>Upcoming Contests</button></div>
                 </Link> 
           </div>
