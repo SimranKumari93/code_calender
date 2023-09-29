@@ -6,7 +6,7 @@ import '../styles/Homes.css';
 
 function Card({ name }) {
   return (
-        <Link to={name} className='contestLink'>
+        <Link to={name} className='contest-link'>
             <div className='op'><div className='in'><img alt="" src={require(`../images/${name}.png`)}></img><span className='title'>{name}</span></div></div>
         </Link>
   )

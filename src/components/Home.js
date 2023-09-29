@@ -4,7 +4,7 @@ import Card from './Card';
 
 import code_calender from '../../src/images/code_calender.png';
 
-import './Homes.css';
+import '../styles/Homes.css';
 
 
 const Home = () => {
@@ -36,7 +36,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                <Link to='all' className='contestLink'> 
+                <Link to='all' className='contest-link'> 
                   <div className='up '><button>Upcoming Contests</button></div>
                 </Link> 
           </div>

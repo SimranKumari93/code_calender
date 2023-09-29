@@ -25,18 +25,18 @@ const DataContest = ({ name,  myURL }) => {
             <div className='head'><img alt=""src={code_calender}></img></div>
             <div className="container">
                 <h2>{ name } Contests</h2>
-                <div>
+                <div className="contest-box">
                     {data.map(contest => (
-                        <div className="contest-box" key={contest.id}>
+                        <div className="contests-id" key={contest.id}>
                             <h3 className="contest-name">{contest.name}</h3>
-                            <p className="contest-details">Starts: {new Date(contest.start_time).toLocaleString()}</p>
-                            <p className="contest-details">Ends: {new Date(contest.end_time).toLocaleString()}</p>
-                            <p className="contest-details">Duration: {Math.floor(contest.duration / 60)} Minutes</p>
-                            <div className="center-button">
-                                <Link to={contest.url} className="contestLink">
-                                    <div className="up2"><button>Take Contest</button></div>
-                                </Link>
-                            </div>
+                                
+                            <p>Starts: {new Date(contest.start_time).toLocaleString()}</p>
+                            <p>Ends: {new Date(contest.end_time).toLocaleString()}</p>
+                            <p>Duration: {Math.floor(contest.duration / 60)} Minutes</p>
+                            
+                            <Link to={contest.url} className="contest-link">
+                                <div className="up2"><button>Take Contest</button></div>
+                            </Link>                            
                         </div>
                     ))}
                 </div>

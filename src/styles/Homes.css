@@ -89,7 +89,6 @@
     border: none;
     border-radius: none;
     color: rgb(255, 255, 255);
-    cursor: pointer;
     
 }
 .wrap{
@@ -102,10 +101,6 @@
     width: 45px;
     
 }
-
-.contestLink {
-    text-decoration: none;
-}
 /* for phone*/
 @media only screen and (max-width: 700px) {
    *{
@@ -114,10 +109,10 @@
    }
     .Sec{
         display: block;
-        
+        width: 100%;
     }
     .subSec{
-        width: 95%;
+        width: 100%;
         height: none;
     }
     .wrap{
