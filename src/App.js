@@ -2,7 +2,6 @@ import { BrowserRouter , Route , Routes } from 'react-router-dom';
 
 import DataContest from './components/DataContest.js';
 import Home from './components/Home.js';
-import Footer from './components/Footer.js';
 
 
 function App() {
@@ -24,8 +23,6 @@ function App() {
             <Route path='/HackerEarth' element={<DataContest name="Hacker Earth" myURL = "https://kontests.net/api/v1/hacker_earth"/>} />      
           </Routes>
         </BrowserRouter>
-
-        {/* <Footer /> */}
 
     </div>
   );

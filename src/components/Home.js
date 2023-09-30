@@ -16,6 +16,7 @@ const Home = () => {
   return (  
     <>
       <div className='head'><img alt=""src={code_calender}></img></div>
+      <h2 className='my-name'>Made with love by Simran Kumari</h2>
       <div className='all'>
           <div className='wrap'>
                 <div className='Sec'>
