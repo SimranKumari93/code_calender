@@ -1,4 +1,80 @@
 *{
+    margin: 0px;
+    width: 0px;
+    box-sizing: border-box;
+}
+.head{
+    height: 100%;
+    width: 80px;
+    display: flex;
+    background-color: rgb(126, 126, 243);
+    text-align: center;
+    border-radius: 4px;
+}
+.head img{
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    display: flex;
+
+}
+.all{
+    height: auto;
+    width: auto;
+    align-items: center;
+    display: flex;
+}
+.wrap{
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+.Sec{
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(77, 77, 169);
+}
+.subSec{
+    height: 100px;
+    width: auto;
+    background-color: rgb(144, 163, 234);
+}
+.wrap div :hover subSec{
+      display: block;
+      position: absolute;
+      background-color: rgb(161, 160, 160);
+      margin-top: 5px;
+      margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
     margin:0;
     padding:0;
    
@@ -38,7 +114,6 @@
 .subSec{
     width:50%;
     height:fit-content;
-   /*border: 2px solid red;*/
     margin:10px auto;
 }
 .op{
@@ -102,7 +177,7 @@
     
 }
 /* for phone*/
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
    *{
     padding: 0px;
     margin: 0px;
@@ -124,4 +199,4 @@
         font-size: 14px;
     }
   
-  }
+  } */ 
