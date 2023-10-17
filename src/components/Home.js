@@ -16,7 +16,7 @@ const Home = () => {
 
   return (  
     <>
-      <div className='head'><img alt=""src={code_calender}></img></div>
+      <center><div className='head' ><img alt=""src={code_calender}></img></div></center>
       <div className='all'>
           <div className='wrap'>
                 <div className='Sec'>

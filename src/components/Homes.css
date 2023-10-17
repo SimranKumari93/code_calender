@@ -4,55 +4,60 @@
     box-sizing: border-box;
 }
 .head{
-    height: 80%;
-    width: 80px;
-    display: flex;
+    height: 65px;
+    width: 280px;
+    display: bolck;
     background-color: rgb(126, 126, 243);
     text-align: center;
     border-radius: 4px;
+    align-items: center;   
 }
-.head img{
+img{
     height: 40px;
-    width: 40px;
+    width: 80px;
     align-items: center;
     display: flex;
 
 }
-.all{
+/* .all{
+    height: 65px;
+    width: 280px;
+    display: bolck;
+    background-color: rgb(126, 126, 243);
+    text-align: center;
+    border-radius: 4px;
+    align-items: center;
+    padding: 5px;
+} */
+/* .wrap{
     height: auto;
     width: auto;
     align-items: center;
-    display: flex;
-}
-.wrap{
-    height: auto;
-    width: auto;
-    align-items: center;
-}
-.Sec{
-    height: 100px;
-    width: auto;
+} */
+/* .Sec{
+    height: 80px; 
+    width: 200px;
     display: flex;
     align-items: center;
     background-color: rgb(77, 77, 169);
-}
+} */
 .subSec{
-    height: 100px;
-    width: auto;
-    background-color: rgb(144, 163, 234);
+    height: 105px;
+    width: 600px;
+    background-color: rgb(131, 152, 228);
     display: inline-block;
     font-weight: 400;
-    color: #d6d6d6;
-    border-radius: 50px;
-    margin: 1em;
+    color: #6b9bae;
+    border-radius: 8px;
+    margin: 10em;
     padding: 1rem 2rem;
     cursor: pointer;
-    border: 1px solid hsla(0, 0% ,100%, .25);
+    border: 1px solid hsla(0, 1%, 27%, 0.25);
 }
 .wrap div :hover subSec{
       display: block;
       position: absolute;
-      background-color: rgb(161, 160, 160);
+      background-color: rgb(134, 120, 120);
       margin-top: 5px;
       margin-left: auto;
 }
@@ -73,8 +78,8 @@ up{
     font-size: medium;
     font-weight: 700;
     border: none;
-    border-radius: none;
-    color: rgb(255, 255, 255);    
+    border-radius: 4px;
+    color: rgb(86, 85, 85);    
 }
 
 
