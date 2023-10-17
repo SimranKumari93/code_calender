@@ -38,7 +38,7 @@ const Home = () => {
                 </div>
 
                 <Link to={contestList1[(Math.floor(Math.random() * contestList1.length))]} className='contestLink'> 
-                  <div className='up '><button>Upcoming Contests</button></div>
+                  <div className='up '><center><button>Upcoming Contests</button></center></div>
                 </Link> 
           </div>
       </div>
