@@ -48,6 +48,26 @@
       margin-top: 5px;
       margin-left: auto;
 }
+up{
+    height: 80px;
+    max-width: 60%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.up button{
+    background-color:#393232;
+    background: linear-gradient(90deg, #3A48C7 7.59%, rgba(76, 156, 231, 0.761577) 85.67%);
+    padding: 20px 45px 20px 45px;
+    
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 700;
+    border: none;
+    border-radius: none;
+    color: rgb(255, 255, 255);    
+}
 
 
 

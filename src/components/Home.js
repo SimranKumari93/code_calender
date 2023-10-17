@@ -2,7 +2,7 @@ import React  from 'react'
 import { Link } from 'react-router-dom';
 import Card from './Card';
 
-import code_calender from '../../src/images/code_calender.png';
+import code_calender from  '../../src/images/code_calender.png';
 
 import './Homes.css';
 
