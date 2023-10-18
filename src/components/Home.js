@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Card from './Card';
 
 import code_calender from  '../../src/images/code_calender.png';
-// import LeetCode from '../../src/images/LeetCode.png';
 
 import './Homes.css';
 
