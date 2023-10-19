@@ -2,20 +2,21 @@ import React  from 'react'
 import { Link } from 'react-router-dom';
 import Card from './Card';
 
-import code_calender from  '../../src/images/code_calender.png';
+import code_calender from '../../src/images/code_calender.png';
 
-import './Homes.css';
+import '../styles/Homes.css';
 
 
 const Home = () => {
 
   const contestList1 = ['LeetCode', 'CodeChef', 'CodeForces'];
-  const contestList2 = ['HackerRank', 'W3Schools', 'GeeksForGeeks'];
-  const contestList3 = ['TopCoder', 'CodingNinjas', 'HackerEarth'];
+  const contestList2 = ['HackerRank', 'AtCoder'];
+  const contestList3 = ['TopCoder', 'HackerEarth'];
 
   return (  
     <>
-      <center><div className='head' ><img alt=""src={code_calender}></img></div></center>
+      <div className='head'><img alt=""src={code_calender}></img></div>
+      <h2 className='my-name'>Made with love by Simran Kumari</h2>
       <div className='all'>
           <div className='wrap'>
                 <div className='Sec'>
@@ -36,8 +37,8 @@ const Home = () => {
                   </div>
                 </div>
 
-                <Link to={contestList1[(Math.floor(Math.random() * contestList1.length))]} className='contestLink'> 
-                  <div className='up '><center><button>Upcoming Contests</button></center></div>
+                <Link to='all' className='contest-link'> 
+                  <div className='up '><button>Upcoming Contests</button></div>
                 </Link> 
           </div>
       </div>

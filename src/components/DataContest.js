@@ -1,6 +1,9 @@
 import React , { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
+import '../styles/DataDisplay.css';
+import code_calender from '../../src/images/code_calender.png';
 
 // import '../assets/styles.css';
 
@@ -18,22 +21,27 @@ const DataContest = ({ name,  myURL }) => {
     }, [myURL]);
 
     return (
-        <div>
-        <h2>{ name } Contests</h2>
-        <div>
-            {data.map(contest => (
-          <div className="contest-box" key={contest.id}>
-          <h3 className="contest-name">{contest.name}</h3>
-          <p className="contest-details">Starts: {new Date(contest.start_time).toLocaleString()}</p>
-          <p className="contest-details">Ends: {new Date(contest.end_time).toLocaleString()}</p>
-          <p className="contest-details">Duration: {contest.duration}</p>
-          <p className="contest-details">
-            URL: <a className="contest-url" href={contest.url} target="_blank" rel="noopener noreferrer">{contest.url}</a>
-          </p>
-        </div>
-        ))}
-        </div>
-        </div> 
+        <>
+            <div className='head'><img alt=""src={code_calender}></img></div>
+            <div className="container">
+                <h2>{ name } Contests</h2>
+                <div className="contest-box">
+                    {data.map(contest => (
+                        <div className="contests-id" key={contest.id}>
+                            <h3 className="contest-name">{contest.name}</h3>
+                                
+                            <p>Starts: {new Date(contest.start_time).toLocaleString()}</p>
+                            <p>Ends: {new Date(contest.end_time).toLocaleString()}</p>
+                            <p>Duration: {Math.floor(contest.duration / 60)} Minutes</p>
+                            
+                            <Link to={contest.url} className="contest-link">
+                                <div className="up2"><button>Take Contest</button></div>
+                            </Link>                            
+                        </div>
+                    ))}
+                </div>
+            </div> 
+        </>
     );
         };
 

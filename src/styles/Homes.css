@@ -14,7 +14,7 @@
 
    
 }
-.head img{
+.head img {
     width:120px;
     -webkit-user-drag: none;  
    user-select: none;
@@ -22,9 +22,14 @@
    -webkit-user-drag: none;
    -webkit-user-select: none;
    -ms-user-select: none;
-  }
+}
 
-.Sec{
+.my-name {
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+}
+
+.Sec {
 
     display: flex;
     width:80%;
@@ -35,13 +40,13 @@
 }
 
 
-.subSec{
+.subSec {
     width:50%;
     height:fit-content;
    /*border: 2px solid red;*/
     margin:10px auto;
 }
-.op{
+.op {
     width: 70%;
     height: 80px;
     background: linear-gradient(90deg, #202874 7.59%, rgba(27, 81, 131, 0.762) 85.67%);;
@@ -90,7 +95,6 @@
     border-radius: none;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    
 }
 .wrap{
     width:100%;
@@ -103,9 +107,7 @@
     
 }
 
-.contestLink {
-    text-decoration: none;
-}
+
 /* for phone*/
 @media only screen and (max-width: 700px) {
    *{
@@ -114,10 +116,10 @@
    }
     .Sec{
         display: block;
-        
+        width: 100%;
     }
     .subSec{
-        width: 95%;
+        width: 100%;
         height: none;
     }
     .wrap{
