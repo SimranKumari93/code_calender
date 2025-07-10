@@ -10,8 +10,9 @@ import '../styles/Homes.css';
 const Home = () => {
 
   const contestList1 = ['LeetCode', 'CodeChef', 'CodeForces'];
-  const contestList2 = ['HackerRank', 'AtCoder'];
-  const contestList3 = ['TopCoder', 'HackerEarth'];
+  const contestList2 = ['HackerRank', 'AtCoder', 'GeeksForGeeks'];
+  const contestList3 = ['TopCoder', 'HackerEarth', 'CodingNinjas'];
+  const contestList4 = ['KickStarter', 'StackOverflow', 'CodeCademy'];
 
   return (  
     <>
@@ -32,6 +33,11 @@ const Home = () => {
                   </div>
                   <div className='subSec'>
                     {contestList3.map((contest, index) => (
+                      <Card name = {contest} key = {index} />
+                    ))}  
+                  </div>
+                  <div className='subSec'>
+                    {contestList4.map((contest, index) => (
                       <Card name = {contest} key = {index} />
                     ))}  
                   </div>
