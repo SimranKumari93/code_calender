@@ -88,6 +88,70 @@
     color: rgb(255, 255, 255);
     cursor: pointer;
   }
+.prev-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+
+  background: linear-gradient(90deg, #202874 7.59%, rgba(27, 81, 131, 0.762) 85.67%);; /* Blue gradient */
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+
+.prev-button:hover {
+  transform: scale(1.05);
+}
+.next-button{
+   position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background: linear-gradient(90deg, #202874 7.59%, rgba(27, 81, 131, 0.762) 85.67%);; /* Blue gradient */
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+.next-button:hover {
+  transform: scale(1.05);
+}
+.calendar-btn {
+  background-color: #182d4d;  /* Google Blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.calendar-btn:hover {
+  background-color: #243d64;
+  transform: translateY(-2px);
+}
+
+.calendar-btn:active {
+  background-color: #14223c;
+  transform: translateY(1px);
+}
+
   
   @media only screen and (max-width: 768px) {
     .contest-box {

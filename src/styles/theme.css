@@ -1,0 +1,33 @@
+/* styles/theme.css */
+.app.light {
+  background-color: white;
+  color: rgb(56, 54, 54);
+}
+
+.app.dark {
+  background-color: rgb(56, 54, 54);
+  color: white;
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #031736;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+}
+.app.dark .home-container {
+  background-color: rgb(56, 54, 54);
+  color: white;
+}
+
+.app.light .home-container {
+  background-color: white;
+  color: rgb(56, 54, 54);
+}

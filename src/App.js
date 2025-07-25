@@ -1,17 +1,26 @@
 import { BrowserRouter , Route , Routes } from 'react-router-dom';
-
+import { useState } from 'react';
+import './styles/theme.css';
 import DataContest from './components/DataContest.js';
 import Home from './components/Home.js';
 
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div>
+    
+      <div className={darkMode ? 'app dark' : 'app light'}>
+      <switch className="toggle-btn" onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? '🌞' : '🌙'}
+      </switch>
+
       {/* {<DataContest myURL = "https://kontests.net/api"/>} */}
     
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Home />} />    
+            <Route path='/' element={<Home />} />   
+            <Route path="/platform/:name" element={<DataContest />} /> 
             <Route path='/all' element={<DataContest name="All Upcoming" myURL = "https://kontests.net/api/v1/all"/>} />    
             <Route path='/TopCoder' element={<DataContest name="Top Coders" myURL="https://kontests.net/api/v1/top_coder" />} />  
             <Route path='/HackerRank' element={<DataContest name="Hacker Rank" myURL="https://kontests.net/api/v1/hacker_rank" />} />    
@@ -29,4 +38,3 @@ function App() {
 }
 
  export default App;
-
